@@ -1,0 +1,126 @@
+Testarea Black Box:
+
+---> operatia Adunare:
+2+3
+Result: 5.0
+Remarca: Operatie reusita
+--------------------------------------
+-2+3
+Result: 1.0
+Remarca: Operatie reusita
+--------------------------------------
+2+-3
+Result: ERROR
+Remarca: Aplicatia nu suporta operatii cu numere negative cind acestea se afla pe pozitia n>1 
+--------------------------------------
+Concluzie:
+- aceasta operatie este efectuata cu succes, exceptie atunci cind expresia contine numar negativ diferit de prima pozitie
+
+---> operatia Scadere:
+2-3
+Result: -1.0
+Remarca: Operatie reusita
+--------------------------------------
+-2-3
+Result: -5.0
+Remarca: Operatie reusita
+--------------------------------------
+0-3
+Result: -3.0
+Remarca: Operatie reusita
+--------------------------------------
+3-0
+Result: 3.0
+Remarca: Operatie reusita
+--------------------------------------
+Concluzie:
+- aceasta operatie este efectuata cu succes.
+
+
+---> operatia Inmultire:
+2*1
+Result: 2.0
+Remarca: Operatie reusita
+--------------------------------------
+3.5*2
+Result: 7.0
+Remarca: Operatie reusita
+--------------------------------------
+5.2*6.2
+Result: 32.239998
+Rezultat asteptat: 32.24
+Remarca: Precizia rezultatului necesita a fi mai mare
+--------------------------------------
+-6*2
+Result: -12.0
+Remarca: Operatie reusita
+--------------------------------------
+-6.3*2
+Result: -12.6
+Remarca: Operatie reusita
+--------------------------------------
+-6*-2
+Result: ERROR
+Remarca: Aplicatia nu suporta operatii cu numere negative cind acestea se afla pe pozitia n>1 
+--------------------------------------
+Concluzie:
+- aceasta operatie este efectuata cu succes, exceptie atunci cind expresia contine numar negativ diferit de prima pozitie. La fel este necesar de o precizie mai mare a rezultatului.
+
+
+
+
+---> operatia Impartire:
+4/2
+Result: 2.0
+Remarca: Operatie reusita
+--------------------------------------
+3.5/2.5
+Result: 1.4
+Remarca: Operatie reusita
+--------------------------------------
+-3/-2
+Result: ERROR
+Remarca: Aplicatia nu suporta operatii cu numere negative cind acestea se afla pe pozitia n>1 
+--------------------------------------
+-3/0
+Result: -Infinity
+Remarca: Operatie reusita. Ar fi mai bine un mesaj ca impartirea la zero nu pote fi efectuata.
+--------------------------------------
+3/0
+Result: Infinity
+Remarca: Operatie reusita. Ar fi mai bine un mesaj ca impartirea la zero nu pote fi efectuata.
+--------------------------------------
+-4/2
+Result: -2.0
+Remarca: Operatie reusita.
+--------------------------------------
+4+5-2/2*3
+Result: 6.0
+Remarca: Operatie reusita. Prioritatea operatiilor este respectata.
+--------------------------------------
+6/10
+Result: 0.6
+Remarca: Operatie reusita.
+--------------------------------------
+6.26/10
+Result: 0.62600005
+Remarca: Necesita o precizie mai mare.
+--------------------------------------
+(4+5)*10/23
+Result: ERROR
+Remarca: Aplicatia nu suporta expresii ce contin paranteze.
+--------------------------------------
+Concluzie:
+- aceasta operatie este efectuata cu succes, exceptie atunci cind expresia contine numar negativ diferit de prima pozitie. La fel este necesar de o precizie mai mare a rezultatului.
+
+
+--> Alte observatii:
+
+45612398.2396+962453.3523
+Result: 4.6574852E7
+Remarca: ar trebui ca rezultatul sa fie afisat intr-un format inteles de utilizator si ca aplicatia sa lucreze cu numere de un format mai mare, ex.Double.
+--------------------------------------
+4-/
+Result: 4.0
+Remarca: Programul ar trebui sa interpeteze ca expresie gresita si sa dea mesajul respectiv.
+--------------------------------------
